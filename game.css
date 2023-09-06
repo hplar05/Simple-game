@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+}
+
+body p {
+  font-size: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgb(0, 0, 0) solid 3px;
+  height: 60vh;
+  border-radius: 20px;
+}
+
+.container button {
+  margin: 5px;
+  padding: 60px;
+  font-size: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  transition: color 0.5s;
+}
+
+.container button:hover {
+  color: yellow;
+}
+
+.container button:active {
+  opacity: 0.5;
+}
