@@ -14,34 +14,43 @@
   </p>
   <div class="container">
     <button onclick="
-    console.log(pickComputermoverock());
+    playGame('rock')
       ">
       Rock
 
     </button>
 
     <button onclick="
-    pickComputermovepaper()
+    playGame('paper');
     ">
       Paper
     </button>
 
     <button onclick="
-        pickComputerMovescissors();
+      playGame('scissors');
     ">
       Scissors
     </button>
+
+
+
+    <button onclick="
+    score.wins = 0,
+    score.losses = 0,
+    score.ties = 0
+    localStorage.removeItem('score');
+    updateScoreElement();
+    
+  /*  document.querySelector('.js-score').innerHTML = `Wins: ${score.wins} Losses: ${score.losses} Ties: ${score.ties}`; */
+    ">
+      Reset Score
+    </button>
+    <p class="js-result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score"></p>
   </div>
-  <script>
-    const computerWin = `computer win!`;
-    const playerWin = `player win!`;
 
-  </script>
-
-<script src="./game.js"></script>
-
-</body>
-
+  <script src="./game.js"></script>
 
 </body>
 
